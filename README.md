@@ -1,5 +1,5 @@
 # telecom-analysis
-# 📡 Análisis de Clientes ConnectaTel
+# Análisis de Clientes ConnectaTel
 
 Análisis exploratorio y segmentación de clientes de ConnectaTel, una empresa de telecomunicaciones en Latinoamérica, con datos registrados hasta el año 2024.
 
@@ -7,7 +7,7 @@ El proyecto recorre el ciclo completo de un análisis de datos: carga, auditorí
 
 ---
 
-## 🎯 Objetivo
+## Objetivo
 
 Evaluar el comportamiento de los clientes para:
 
@@ -18,7 +18,7 @@ Evaluar el comportamiento de los clientes para:
 
 ---
 
-## 🗂️ Datasets utilizados
+## Datasets utilizados
 
 | Archivo | Contenido |
 |---|---|
@@ -26,11 +26,11 @@ Evaluar el comportamiento de los clientes para:
 | `users_latam.csv` | Clientes: edad, ciudad, fecha de registro, plan y fecha de baja (churn). |
 | `usage.csv` | Detalle del uso real de los servicios (llamadas y mensajes): tipo, fecha, duración y longitud. |
 
-> ⚠️ Los datos no están incluidos en este repositorio. El notebook los lee desde la ruta `/datasets/`. Consulta la sección [Cómo ejecutar el notebook](#-cómo-ejecutar-el-notebook) para adaptar las rutas.
+> Los datos no están incluidos en este repositorio. El notebook los lee desde la ruta `/datasets/`. Consulta la sección [Cómo ejecutar el notebook](#-cómo-ejecutar-el-notebook) para adaptar las rutas.
 
 ---
 
-## 🧭 Etapas del análisis
+## Etapas del análisis
 
 1. **Cargar y explorar:** carga de los tres datasets, revisión de dimensiones (`.shape`), tipos de datos (`.info()`) y vista preliminar (`.head()`).
 2. **Calidad de datos:** revisión de valores nulos, detección de valores inválidos (sentinels) y validación de fechas.
@@ -48,7 +48,7 @@ Evaluar el comportamiento de los clientes para:
 
 ---
 
-## 🔎 Hallazgos principales
+## Hallazgos principales
 
 **Problemas de calidad de datos**
 
@@ -77,7 +77,7 @@ Evaluar el comportamiento de los clientes para:
 
 ---
 
-## 🛠️ Tecnologías
+## Tecnologías
 
 - Python 3
 - `pandas`, `numpy`
@@ -86,7 +86,7 @@ Evaluar el comportamiento de los clientes para:
 
 ---
 
-## ▶️ Cómo ejecutar el notebook
+## Cómo ejecutar el notebook
 
 ### Google Colab 
 
@@ -104,7 +104,7 @@ Evaluar el comportamiento de los clientes para:
 
 ---
 
-## 🔁 Guía breve de reproducción
+## Guía breve de reproducción
 
 1. Cargar los tres datasets y verificar `.shape` e `.info()`.
 2. Aplicar la limpieza del paso 3 **antes** de agregar el uso por usuario.
@@ -115,7 +115,7 @@ Evaluar el comportamiento de los clientes para:
 
 ---
 
-## 📁 Estructura del repositorio
+## Estructura del repositorio
 
 ```
 .
@@ -126,7 +126,7 @@ Evaluar el comportamiento de los clientes para:
 
 ---
 
-## ⚠️ Limitaciones
+## Limitaciones
 
 - Los datos de `users` y `usage` tienen nulos que se conservaron deliberadamente. Cualquier análisis por ciudad debe tomarlo en cuenta.
 - El análisis es descriptivo. **No se analizó el churn**, por lo que no se pueden afirmar relaciones causales entre segmento y abandono.
